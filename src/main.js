@@ -2,9 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import VueApollo from 'vue-apollo'
-import Apolloclient from 'apollo-boost'
+import ApolloClient from 'apollo-boost'
 
-const apolloClient = new Apolloclient({
+const apolloClient = new ApolloClient({
   uri: 'https://api.spacex.land/graphql'
 })
 
