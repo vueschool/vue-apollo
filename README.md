@@ -1,6 +1,6 @@
 # Vue-Apollo GraphQL Fundamentals
 
-[![](https://vueschool.io/media/e256afbe4cfb56f8e3df32d2550d6823/vueschool_vue-apollo-graphql-fundamentals-course.jpg)](https://vueschool.io/courses/whats-new-in-vue-3)
+[![](https://vueschool.io/media/e256afbe4cfb56f8e3df32d2550d6823/vueschool_vue-apollo-graphql-fundamentals-course.jpg)](https://vueschool.io/courses/vue-apollo-graphql-fundamentals)
 
 This repository contains the example code for the [Vue-Apollo GraphQL Fundamentals](https://vueschool.io/courses/vue-apollo-graphql-fundamentals) course.
 
