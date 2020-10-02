@@ -1,9 +1,9 @@
 <template>
     <ul>
         <li v-for="rocket in rockets" :key="rocket.id">
-            <h2>{{rocket.name}}</h2>
-            <h3>{{rocket.description}}</h3>
-            <h3>$ {{rocket.costPerLaunch }}</h3>
+            <router-link :to="{name: 'Rocket', params: {id: rocket.id}}">
+                <h2>🚀 {{rocket.name}}</h2>
+            </router-link>
         </li>
     </ul>
 </template>
@@ -15,8 +15,6 @@ query getRockets {
   rockets {
     id
     name
-    description
-    costPerLaunch: cost_per_launch
   }
 }`
 
