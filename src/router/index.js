@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
@@ -16,7 +16,8 @@ Vue.use(VueRouter)
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "rockets" */ '../views/Rockets.vue')
+    component: () =>
+      import(/* webpackChunkName: "rockets" */ '../views/Rockets.vue')
   },
   {
     path: '/rocket/:id',
@@ -24,7 +25,17 @@ Vue.use(VueRouter)
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "rocket" */ '../views/Rocket.vue')
+    component: () =>
+      import(/* webpackChunkName: "rocket" */ '../views/Rocket.vue')
+  },
+  {
+    path: '/users',
+    name: 'Users',
+    // route level code-splitting
+    // this generates a separate chunk (users.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "Users" */ '../views/Users.vue')
   }
 ]
 
