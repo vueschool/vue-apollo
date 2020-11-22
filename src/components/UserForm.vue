@@ -43,6 +43,21 @@ export default {
           data.users.unshift(newUser);
           data.users.pop();
           cache.writeQuery({ query: GET_USERS, data})
+        },
+        optimisticResponse: {
+          __typename: "Mutation",
+          insert_users: {
+            __typename: "users_mutation_response",
+            returning: [
+              {
+                __typename: "users",
+                id: -1,
+                name,
+                twitter,
+                rocket
+              }
+            ]
+          }
         }
       })
     }
